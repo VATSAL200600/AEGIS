@@ -1,0 +1,67 @@
+# ============================================================
+# AEGIS – .gitignore
+# ============================================================
+
+# --- Environment & Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+venv/
+.venv/
+env/
+.Python
+
+# --- SQLite databases (runtime data) ---
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+*.db
+
+# --- Node / Frontend ---
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/dist-ssr/
+*.local
+
+# --- Test artifacts ---
+testsprite_tests/
+backend/tests/
+backend/tests/__pycache__/
+
+# --- IDE & OS ---
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs & caches ---
+*.log
+*.pid
+logs/
+.cache/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+
+# --- Build artefacts ---
+*.zip
+*.tar.gz
